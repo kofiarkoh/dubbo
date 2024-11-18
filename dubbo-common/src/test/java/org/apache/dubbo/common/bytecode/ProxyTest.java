@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common.bytecode;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;
@@ -27,6 +30,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
 
 @DisabledForJreRange(min = JRE.JAVA_16)
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class ProxyTest {
 
     @Test

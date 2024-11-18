@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common.logger.support;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.apache.dubbo.common.logger.Logger;
 
@@ -27,6 +30,8 @@ import static org.mockito.Mockito.doThrow;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class FailsafeLoggerTest {
     @Test
     public void testFailSafeForLoggingMethod() {

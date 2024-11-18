@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common.config.configcenter.file;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.apache.dubbo.common.URL;
 import org.apache.dubbo.common.logger.Logger;
@@ -45,6 +48,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 // Test often failed on Github Actions Platform because of file system on Azure
 // Change to Disabled because DisabledIfEnvironmentVariable does not work on Github.
 @Disabled
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class FileSystemDynamicConfigurationTest {
 
     private final Logger logger = LoggerFactory.getLogger(getClass());

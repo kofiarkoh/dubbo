@@ -16,12 +16,17 @@
  */
 
 package org.apache.dubbo.common.utils;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class HolderTest {
     @Test
     public void testSetAndGet() throws Exception {

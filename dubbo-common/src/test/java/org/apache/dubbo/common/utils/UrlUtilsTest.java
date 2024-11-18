@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common.utils;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.apache.dubbo.common.URL;
 
@@ -37,6 +40,8 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class UrlUtilsTest {
 
     String localAddress = "127.0.0.1";

@@ -15,11 +15,16 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.apache.dubbo.common.utils.PojoUtils;
 
 import org.junit.jupiter.api.Test;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class PojoUtilsForNonPublicStaticTest {
 
     @Test

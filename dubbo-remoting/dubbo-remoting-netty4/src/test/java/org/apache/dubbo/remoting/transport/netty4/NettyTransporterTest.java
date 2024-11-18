@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.remoting.transport.netty4;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.apache.dubbo.common.URL;
 import org.apache.dubbo.common.url.component.ServiceConfigURL;
@@ -32,6 +35,8 @@ import java.util.concurrent.CountDownLatch;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class NettyTransporterTest {
     @Test
     public void shouldAbleToBindNetty4() throws Exception {

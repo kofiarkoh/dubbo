@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common.utils;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -32,6 +35,8 @@ import static org.apache.dubbo.common.utils.MethodUtils.getMethods;
 import static org.apache.dubbo.common.utils.MethodUtils.invokeMethod;
 import static org.apache.dubbo.common.utils.MethodUtils.overrides;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class MethodUtilsTest {
 
     @Test

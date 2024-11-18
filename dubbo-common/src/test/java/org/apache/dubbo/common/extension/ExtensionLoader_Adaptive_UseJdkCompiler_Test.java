@@ -15,12 +15,17 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common.extension;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.apache.dubbo.common.compiler.support.AdaptiveCompiler;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class ExtensionLoader_Adaptive_UseJdkCompiler_Test extends ExtensionLoader_Adaptive_Test {
     @BeforeAll
     public static void setUp() throws Exception {

@@ -16,6 +16,9 @@
  */
 
 package org.apache.dubbo.common.threadpool.serial;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
@@ -29,6 +32,8 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.TimeUnit;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class SerializingExecutorTest {
 
     protected static SerializingExecutor serializingExecutor;

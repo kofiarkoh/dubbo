@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common.json;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -23,6 +26,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class GsonUtilsTest {
     @Test
     public void test1() {

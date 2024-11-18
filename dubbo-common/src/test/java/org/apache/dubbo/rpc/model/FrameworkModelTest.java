@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.rpc.model;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.apache.dubbo.common.extension.ExtensionScope;
 import org.apache.dubbo.common.utils.StringUtils;
@@ -25,6 +28,8 @@ import org.junit.jupiter.api.Test;
 /**
  * {@link FrameworkModel}
  */
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class FrameworkModelTest {
     @Test
     public void testInitialize() {

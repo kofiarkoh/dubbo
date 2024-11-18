@@ -16,6 +16,9 @@
  */
 
 package org.apache.dubbo.common.utils;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 
 import org.junit.jupiter.api.AfterEach;
@@ -38,6 +41,8 @@ import java.nio.file.Path;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class IOUtilsTest {
 
     private static String TEXT = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";

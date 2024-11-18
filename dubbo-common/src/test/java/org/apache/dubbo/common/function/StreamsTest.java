@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common.function;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.junit.jupiter.api.Test;
 
@@ -35,6 +38,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  *
  * @since 2.7.5
  */
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class StreamsTest {
 
     @Test

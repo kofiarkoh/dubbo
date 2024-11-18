@@ -21,7 +21,7 @@ import org.apache.dubbo.rpc.model.ScopeModel;
 
 import java.util.Map;
 import java.util.Properties;
-
+import edu.illinois.ConfigTracker;
 /**
  * Configuration from system properties and dubbo.properties
  */
@@ -33,6 +33,7 @@ public class PropertiesConfiguration implements Configuration {
     public PropertiesConfiguration(ScopeModel scopeModel) {
         this.scopeModel = scopeModel;
         refresh();
+        ConfigTracker.injectConfig((paramName, paramValue) -> setProperty(paramName, (String) paramValue));
     }
 
     public void refresh() {
@@ -41,6 +42,7 @@ public class PropertiesConfiguration implements Configuration {
 
     @Override
     public String getProperty(String key) {
+        ConfigTracker.markParamAsUsed(key);
         return properties.getProperty(key);
     }
 
@@ -50,6 +52,8 @@ public class PropertiesConfiguration implements Configuration {
     }
 
     public void setProperty(String key, String value) {
+
+        ConfigTracker.markParamAsSet(key);
         properties.setProperty(key, value);
     }
 

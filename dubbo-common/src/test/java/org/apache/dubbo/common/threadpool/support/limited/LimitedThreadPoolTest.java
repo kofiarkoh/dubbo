@@ -16,6 +16,9 @@
  */
 
 package org.apache.dubbo.common.threadpool.support.limited;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.apache.dubbo.common.URL;
 import org.apache.dubbo.common.threadlocal.InternalThread;
@@ -41,6 +44,8 @@ import static org.hamcrest.Matchers.instanceOf;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.startsWith;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class LimitedThreadPoolTest {
     @Test
     public void getExecutor1() throws Exception {

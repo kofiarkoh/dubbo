@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common.concurrent;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.apache.dubbo.common.utils.NamedThreadFactory;
 
@@ -37,6 +40,8 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class CompletableFutureTaskTest {
 
     private static final ExecutorService executor = new ThreadPoolExecutor(0, 10, 60L, TimeUnit.SECONDS, new SynchronousQueue<Runnable>(), new NamedThreadFactory("DubboMonitorCreator", true));

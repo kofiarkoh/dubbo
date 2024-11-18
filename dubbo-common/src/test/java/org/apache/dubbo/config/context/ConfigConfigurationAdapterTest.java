@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.config.context;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.apache.dubbo.config.RegistryConfig;
 
@@ -24,6 +27,8 @@ import org.junit.jupiter.api.Test;
 /**
  * {@link ConfigConfigurationAdapter}
  */
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class ConfigConfigurationAdapterTest {
 
     @Test

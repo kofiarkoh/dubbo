@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common.threadpool;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.apache.dubbo.common.URL;
 import org.apache.dubbo.common.extension.ExtensionLoader;
@@ -26,6 +29,8 @@ import org.junit.jupiter.api.Test;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutorService;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class ThreadlessExecutorTest {
     private static ThreadlessExecutor executor;
 

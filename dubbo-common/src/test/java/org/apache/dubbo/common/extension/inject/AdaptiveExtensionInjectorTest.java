@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common.extension.inject;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.apache.dubbo.common.beans.ScopeBeanExtensionInjector;
 import org.apache.dubbo.common.beans.factory.ScopeBeanFactory;
@@ -31,6 +34,8 @@ import org.junit.jupiter.api.Test;
  * {@link ScopeBeanExtensionInjector}
  * {@link SpiExtensionInjector}
  */
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class AdaptiveExtensionInjectorTest {
 
     @Test

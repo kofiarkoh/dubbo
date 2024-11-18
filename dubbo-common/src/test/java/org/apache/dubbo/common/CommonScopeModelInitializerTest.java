@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.apache.dubbo.common.beans.factory.ScopeBeanFactory;
 import org.apache.dubbo.common.config.ConfigurationCache;
@@ -32,6 +35,8 @@ import org.junit.jupiter.api.Test;
 /**
  * {@link CommonScopeModelInitializer}
  */
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class CommonScopeModelInitializerTest {
 
     private FrameworkModel frameworkModel;

@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common.extension;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.apache.dubbo.common.extension.compatible.CompatibleExt;
 import org.apache.dubbo.common.extension.compatible.impl.CompatibleExtImpl1;
@@ -24,6 +27,8 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class ExtensionLoader_Compatible_Test {
 
     @Test

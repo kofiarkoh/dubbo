@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common.convert.multiple;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -47,6 +50,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
  *
  * @since 2.7.6
  */
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class StringToCollectionConverterTest {
 
     private MultiValueConverter converter;

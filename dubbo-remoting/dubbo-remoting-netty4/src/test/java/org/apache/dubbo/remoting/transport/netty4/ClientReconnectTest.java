@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.remoting.transport.netty4;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.apache.dubbo.common.utils.DubboAppender;
 import org.apache.dubbo.common.utils.NetUtils;
@@ -33,6 +36,8 @@ import org.junit.jupiter.api.Test;
 /**
  * Client reconnect test
  */
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class ClientReconnectTest {
     public static void main(String[] args) {
         System.out.println(3 % 1);

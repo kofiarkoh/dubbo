@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common.cache;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -25,6 +28,8 @@ import java.net.URISyntaxException;
 import java.net.URL;
 import java.nio.file.Paths;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class FileCacheStoreFactoryTest {
 
     @Test

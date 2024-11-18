@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.rpc.model;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.apache.dubbo.common.utils.StringUtils;
 
@@ -26,6 +29,8 @@ import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import java.util.stream.Collectors;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class ScopeModelTest {
 
     @Test

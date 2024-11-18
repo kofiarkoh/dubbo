@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.remoting.transport.netty4;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.apache.dubbo.common.URL;
 import org.apache.dubbo.remoting.ChannelHandler;
@@ -29,6 +32,8 @@ import org.mockito.Mockito;
 /**
  * {@link NettyCodecAdapter}
  */
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class NettyCodecAdapterTest {
 
     @Test

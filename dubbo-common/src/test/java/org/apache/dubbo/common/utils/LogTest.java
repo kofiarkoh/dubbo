@@ -16,6 +16,9 @@
  */
 
 package org.apache.dubbo.common.utils;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.apache.log4j.Level;
 import org.junit.jupiter.api.Assertions;
@@ -25,6 +28,8 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.is;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class LogTest {
     @Test
     public void testLogName() throws Exception {

@@ -16,6 +16,9 @@
  */
 
 package org.apache.dubbo.common.status.support;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.apache.dubbo.common.status.Status;
 
@@ -30,6 +33,8 @@ import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.isEmptyOrNullString;
 import static org.hamcrest.Matchers.not;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class StatusUtilsTest {
     @Test
     public void testGetSummaryStatus1() throws Exception {

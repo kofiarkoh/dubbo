@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common.io;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -31,6 +34,8 @@ import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.mock;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class UnsafeByteArrayOutputStreamTest {
     @Test
     public void testWrongSize() {

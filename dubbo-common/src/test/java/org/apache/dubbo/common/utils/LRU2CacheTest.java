@@ -16,6 +16,9 @@
  */
 
 package org.apache.dubbo.common.utils;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.junit.jupiter.api.Test;
 
@@ -24,6 +27,8 @@ import static org.hamcrest.Matchers.equalTo;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class LRU2CacheTest {
     @Test
     public void testCache() throws Exception {

@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common.utils;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -28,6 +31,8 @@ import static java.util.Arrays.asList;
  *
  * @since 2.7.5
  */
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class DefaultPageTest {
 
     @Test

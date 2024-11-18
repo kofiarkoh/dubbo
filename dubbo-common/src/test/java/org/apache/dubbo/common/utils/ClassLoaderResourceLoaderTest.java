@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common.utils;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.apache.dubbo.common.extension.DubboInternalLoadingStrategy;
 import org.apache.dubbo.common.extension.director.FooAppProvider;
@@ -31,6 +34,8 @@ import java.util.Set;
 /**
  * {@link ClassLoaderResourceLoader}
  */
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class ClassLoaderResourceLoaderTest {
 
     @Test

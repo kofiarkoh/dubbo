@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common.utils;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.junit.jupiter.api.Test;
 import org.mockito.MockedStatic;
@@ -28,6 +31,8 @@ import java.util.NoSuchElementException;
 import static org.apache.dubbo.common.constants.CommonConstants.DUBBO_NETWORK_IGNORED_INTERFACE;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class NetUtilsInterfaceDisplayNameHasMetaCharactersTest {
     private static final String IGNORED_DISPLAY_NAME_HAS_METACHARACTERS = "Mock(R) ^$*+[?].|-[0-9] Adapter";
     private static final String SELECTED_DISPLAY_NAME = "Selected Adapter";

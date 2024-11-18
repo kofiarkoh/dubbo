@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.apache.dubbo.common.url.component.DubboServiceAddressURL;
 import org.apache.dubbo.common.url.component.ServiceAddressURL;
@@ -27,6 +30,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertNotSame;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class InterfaceAddressURLTest {
     private static final String rawURL = "dubbo://10.20.130.230:20880/context/path?version=1.0.0&group=g1&application=provider&timeout=1000&category=provider&side=provider&sayHello.weight=222";
     private static final URL overrideURL = URL.valueOf("override://10.20.130.230:20880/context/path?version=1.0.0&application=morgan&timeout=2000&category=configurators&sayHello.overrideKey=override");

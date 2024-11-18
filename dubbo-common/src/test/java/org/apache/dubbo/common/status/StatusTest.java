@@ -16,6 +16,9 @@
  */
 
 package org.apache.dubbo.common.status;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.junit.jupiter.api.Test;
 
@@ -25,6 +28,8 @@ import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.isEmptyOrNullString;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class StatusTest {
     @Test
     public void testConstructor1() throws Exception {

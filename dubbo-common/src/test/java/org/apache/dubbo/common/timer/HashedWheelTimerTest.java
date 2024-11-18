@@ -16,6 +16,9 @@
  */
 
 package org.apache.dubbo.common.timer;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.apache.dubbo.common.utils.NamedThreadFactory;
 
@@ -28,6 +31,8 @@ import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class HashedWheelTimerTest {
     private CountDownLatch tryStopTaskCountDownLatch = new CountDownLatch(1);
     private CountDownLatch errorTaskCountDownLatch = new CountDownLatch(1);

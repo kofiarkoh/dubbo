@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common.config.configcenter;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.apache.dubbo.common.URL;
 import org.apache.dubbo.common.config.configcenter.nop.NopDynamicConfiguration;
@@ -30,6 +33,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * @see AbstractDynamicConfigurationFactory
  * @since 2.7.5
  */
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class AbstractDynamicConfigurationFactoryTest {
 
     private AbstractDynamicConfigurationFactory factory;

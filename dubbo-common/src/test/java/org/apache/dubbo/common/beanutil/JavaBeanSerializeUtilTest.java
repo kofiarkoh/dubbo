@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common.beanutil;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.apache.dubbo.common.utils.PojoUtilsTest;
 import org.apache.dubbo.rpc.model.person.BigPerson;
@@ -35,6 +38,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class JavaBeanSerializeUtilTest {
 
     @Test

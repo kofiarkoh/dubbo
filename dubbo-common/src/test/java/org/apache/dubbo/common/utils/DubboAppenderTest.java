@@ -16,6 +16,9 @@
  */
 
 package org.apache.dubbo.common.utils;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.apache.log4j.Category;
 import org.apache.log4j.Level;
@@ -32,6 +35,8 @@ import static org.mockito.Mockito.when;
 import static org.junit.jupiter.api.Assumptions.assumeFalse;
 import static org.junit.jupiter.api.Assumptions.assumeTrue;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class DubboAppenderTest {
     private LoggingEvent event;
 

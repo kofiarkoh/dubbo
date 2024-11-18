@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.remoting.transport.netty4;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.apache.dubbo.common.URL;
 import org.apache.dubbo.remoting.Constants;
@@ -27,6 +30,8 @@ import org.apache.dubbo.remoting.exchange.support.Replier;
 /**
  * Netty4ClientToServerTest
  */
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class NettyClientToServerTest extends ClientToServerTest {
 
     protected ExchangeServer newServer(int port, Replier<?> receiver) throws RemotingException {

@@ -16,6 +16,9 @@
  */
 
 package org.apache.dubbo.common.utils;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
@@ -27,6 +30,8 @@ import static org.hamcrest.Matchers.sameInstance;
 import static org.hamcrest.Matchers.startsWith;
 import static org.mockito.Mockito.verify;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class ClassUtilsTest {
     @Test
     public void testForNameWithThreadContextClassLoader() throws Exception {

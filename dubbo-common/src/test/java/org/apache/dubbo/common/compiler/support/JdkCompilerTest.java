@@ -15,12 +15,17 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common.compiler.support;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.lang.reflect.Method;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class JdkCompilerTest extends JavaCodeTest {
 
     @Test

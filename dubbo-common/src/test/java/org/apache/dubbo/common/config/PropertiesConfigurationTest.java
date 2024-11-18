@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common.config;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.apache.dubbo.rpc.model.ApplicationModel;
 
@@ -26,6 +29,8 @@ import java.util.Map;
 /**
  * {@link PropertiesConfiguration}
  */
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class PropertiesConfigurationTest {
 
     @Test

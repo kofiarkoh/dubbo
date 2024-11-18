@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common.threadpool.event;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.junit.jupiter.api.Test;
 
@@ -23,6 +26,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 /**
  *  {@link ThreadPoolExhaustedEvent} Test
  */
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class ThreadPoolExhaustedEventTest {
 
     @Test

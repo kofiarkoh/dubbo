@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common.resource;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -24,6 +27,8 @@ import java.util.concurrent.ExecutorService;
 /**
  * {@link GlobalResourcesRepository}
  */
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class GlobalResourcesRepositoryTest {
 
     @Test

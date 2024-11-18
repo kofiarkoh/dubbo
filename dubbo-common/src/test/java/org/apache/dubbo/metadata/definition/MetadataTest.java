@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.metadata.definition;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.apache.dubbo.common.utils.JsonUtils;
 import org.apache.dubbo.metadata.definition.common.ClassExtendsMap;
@@ -35,6 +38,8 @@ import org.junit.jupiter.api.Test;
  * <p>
  * 16/9/22.
  */
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class MetadataTest {
 
     @BeforeAll

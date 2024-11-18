@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.remoting.transport.netty4;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.apache.dubbo.common.URL;
 import org.apache.dubbo.common.url.component.ServiceConfigURL;
@@ -29,6 +32,8 @@ import org.mockito.Mockito;
 
 import java.net.InetSocketAddress;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class NettyChannelTest {
     private Channel channel = Mockito.mock(Channel.class);
     private URL url = new ServiceConfigURL("dubbo", "127.0.0.1", 8080);

@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common.threadpool.support;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.apache.dubbo.common.URL;
 import org.apache.dubbo.common.threadpool.event.ThreadPoolExhaustedEvent;
@@ -31,6 +34,8 @@ import static org.apache.dubbo.common.constants.CommonConstants.OS_NAME_KEY;
 import static org.apache.dubbo.common.constants.CommonConstants.OS_WIN_PREFIX;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class AbortPolicyWithReportTest {
     @Test
     public void jStackDumpTest() throws InterruptedException {

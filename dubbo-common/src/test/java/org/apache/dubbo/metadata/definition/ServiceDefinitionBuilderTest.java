@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.metadata.definition;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.apache.dubbo.metadata.definition.model.FullServiceDefinition;
 import org.apache.dubbo.metadata.definition.model.MethodDefinition;
@@ -31,6 +34,8 @@ import java.util.List;
 /**
  * 2018/11/6
  */
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class ServiceDefinitionBuilderTest {
 
     @Test

@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common.utils;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import java.net.Socket;
 import java.util.LinkedList;
@@ -29,6 +32,8 @@ import org.junit.jupiter.api.Test;
 
 import javassist.compiler.Javac;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class SerializeClassCheckerTest {
 
     @BeforeEach

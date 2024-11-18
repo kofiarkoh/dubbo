@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common.config;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.apache.dubbo.rpc.model.ApplicationModel;
 import org.apache.dubbo.rpc.model.FrameworkModel;
@@ -31,6 +34,8 @@ import static org.apache.dubbo.common.constants.CommonConstants.SHUTDOWN_WAIT_KE
 /**
  *
  */
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class ConfigurationUtilsTest {
     @Test
     public void testCachedProperties() {

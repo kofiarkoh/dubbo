@@ -15,9 +15,14 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common.compiler.support;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class JavaCodeTest {
 
     public final static AtomicInteger SUBFIX = new AtomicInteger(8);

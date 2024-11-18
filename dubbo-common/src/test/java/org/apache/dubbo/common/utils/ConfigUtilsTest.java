@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common.utils;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.apache.dubbo.common.config.CompositeConfiguration;
 import org.apache.dubbo.common.config.InmemoryConfiguration;
@@ -42,6 +45,8 @@ import static org.hamcrest.Matchers.greaterThan;
 import static org.hamcrest.Matchers.is;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class ConfigUtilsTest {
     private Properties properties;
     

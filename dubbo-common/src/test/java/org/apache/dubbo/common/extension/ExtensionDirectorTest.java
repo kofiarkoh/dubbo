@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common.extension;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.apache.dubbo.common.extension.director.FooAppService;
 import org.apache.dubbo.common.extension.director.FooFrameworkService;
@@ -31,6 +34,8 @@ import org.junit.jupiter.api.Test;
 
 import java.util.Collection;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class ExtensionDirectorTest {
 
     String testFwSrvName = "testFwSrv";

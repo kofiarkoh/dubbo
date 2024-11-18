@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.config;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 
 import org.apache.dubbo.common.constants.CommonConstants;
@@ -29,6 +32,8 @@ import java.io.File;
 import java.nio.file.Path;
 import java.util.Collections;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class AbstractInterfaceConfigTest {
 
     @BeforeAll

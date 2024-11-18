@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common.logger.slf4j;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.junit.jupiter.api.Test;
 import org.slf4j.Marker;
@@ -28,6 +31,8 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.internal.verification.VerificationModeFactory.times;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class Slf4jLoggerTest {
     @Test
     public void testLocationAwareLogger() {

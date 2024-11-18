@@ -16,6 +16,9 @@
  */
 
 package org.apache.dubbo.common.threadlocal;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
@@ -34,6 +37,8 @@ import static org.hamcrest.CoreMatchers.not;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class InternalThreadLocalTest {
 
     private static final int THREADS = 10;

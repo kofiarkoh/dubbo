@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import net.bytebuddy.utility.RandomString;
 import org.junit.jupiter.api.Assertions;
@@ -29,6 +32,8 @@ import static org.hamcrest.MatcherAssert.assertThat;
 /**
  * Created by LinShunkang on 2020/03/12
  */
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class URLStrParserTest {
     private static Set<String> testCases = new HashSet<>(16);
     private static Set<String> errorDecodedCases = new HashSet<>(8);

@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common.config;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
@@ -29,6 +32,8 @@ import java.util.Map;
 /**
  * The type Environment configuration test.
  */
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class EnvironmentConfigurationTest {
 
     private static final String MOCK_KEY = "DUBBO_KEY";

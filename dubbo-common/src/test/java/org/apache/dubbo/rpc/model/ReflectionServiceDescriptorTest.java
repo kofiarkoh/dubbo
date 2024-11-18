@@ -16,6 +16,9 @@
  */
 
 package org.apache.dubbo.rpc.model;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.apache.dubbo.common.utils.ReflectUtils;
 import org.apache.dubbo.metadata.definition.TypeDefinitionBuilder;

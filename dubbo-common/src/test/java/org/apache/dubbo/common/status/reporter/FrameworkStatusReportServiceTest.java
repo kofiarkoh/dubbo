@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common.status.reporter;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.apache.dubbo.common.URL;
 import org.apache.dubbo.common.utils.JsonUtils;
@@ -36,6 +39,8 @@ import static org.apache.dubbo.common.status.reporter.FrameworkStatusReportServi
 /**
  * {@link FrameworkStatusReportService}
  */
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class FrameworkStatusReportServiceTest {
 
     @Test

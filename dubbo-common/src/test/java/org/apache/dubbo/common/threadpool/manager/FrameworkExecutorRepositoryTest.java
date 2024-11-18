@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common.threadpool.manager;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.apache.dubbo.rpc.model.FrameworkModel;
 
@@ -26,6 +29,8 @@ import org.junit.jupiter.api.Test;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.atomic.AtomicBoolean;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class FrameworkExecutorRepositoryTest {
     private FrameworkModel frameworkModel;
     private FrameworkExecutorRepository frameworkExecutorRepository;

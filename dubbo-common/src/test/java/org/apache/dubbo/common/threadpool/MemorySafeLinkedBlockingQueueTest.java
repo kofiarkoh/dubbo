@@ -16,6 +16,9 @@
  */
 
 package org.apache.dubbo.common.threadpool;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import net.bytebuddy.agent.ByteBuddyAgent;
 import org.apache.dubbo.common.concurrent.AbortPolicy;
@@ -28,6 +31,8 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class MemorySafeLinkedBlockingQueueTest {
     @Test
     public void test() throws Exception {

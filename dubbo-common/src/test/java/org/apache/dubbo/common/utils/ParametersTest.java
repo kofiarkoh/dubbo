@@ -15,12 +15,17 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common.utils;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import java.util.HashMap;
 import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class ParametersTest {
     final String ServiceName = "org.apache.dubbo.rpc.service.GenericService";
     final String ServiceVersion = "1.0.15";

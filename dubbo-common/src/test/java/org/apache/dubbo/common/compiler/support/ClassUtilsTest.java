@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common.compiler.support;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -25,6 +28,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class ClassUtilsTest {
 
     @Test

@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.apache.dubbo.common.utils.NetUtils;
 
@@ -27,6 +30,8 @@ import java.util.Map;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class URLBuilderTest {
     @Test
     public void testNoArgConstructor() {

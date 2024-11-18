@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common.utils;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.apache.dubbo.common.extension.Adaptive;
 import org.apache.dubbo.config.annotation.DubboService;
@@ -66,6 +69,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
  *
  * @since 2.7.6
  */
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class AnnotationUtilsTest {
 
     @Test

@@ -15,6 +15,9 @@
  * limitations under the License.
  */
 package org.apache.dubbo.common.io;
+import edu.illinois.CTestJUnit5Extension;
+import org.junit.jupiter.api.extension.ExtendWith;
+import edu.illinois.CTestClass;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -28,6 +31,8 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class StreamUtilsTest {
 
     @Test

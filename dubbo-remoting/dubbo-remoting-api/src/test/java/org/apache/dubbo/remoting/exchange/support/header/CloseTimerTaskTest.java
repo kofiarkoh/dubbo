@@ -15,6 +15,12 @@
  * limitations under the License.
  */
 package org.apache.dubbo.remoting.exchange.support.header;
+import edu.illinois.CTestJUnit5Extension;
+
+import org.junit.jupiter.api.extension.ExtendWith;
+
+import edu.illinois.CTestClass;
+
 
 import org.apache.dubbo.common.URL;
 import org.apache.dubbo.common.timer.HashedWheelTimer;
@@ -33,6 +39,8 @@ import static org.apache.dubbo.remoting.Constants.HEARTBEAT_CHECK_TICK;
 /**
  * {@link CloseTimerTask}
  */
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class CloseTimerTaskTest {
 
     private URL url = URL.valueOf("dubbo://localhost:20880");

@@ -16,6 +16,12 @@
  */
 package org.apache.dubbo.remoting.transport.netty4;
 import edu.illinois.CTestJUnit5Extension;
+
+import org.junit.jupiter.api.extension.ExtendWith;
+
+import edu.illinois.CTestClass;
+
+import edu.illinois.CTestJUnit5Extension;
 import org.junit.jupiter.api.extension.ExtendWith;
 import edu.illinois.CTestClass;
 
@@ -35,7 +41,9 @@ import java.util.concurrent.CompletableFuture;
 /**
  * ClientToServer
  */
-public abstract class ClientToServerTest {
+public abstract @ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
+class ClientToServerTest {
 
     protected ExchangeServer server;
 

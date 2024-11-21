@@ -15,6 +15,12 @@
  * limitations under the License.
  */
 package org.apache.dubbo.remoting.api;
+import edu.illinois.CTestJUnit5Extension;
+
+import org.junit.jupiter.api.extension.ExtendWith;
+
+import edu.illinois.CTestClass;
+
 
 import org.apache.dubbo.common.URL;
 import org.apache.dubbo.common.utils.NetUtils;
@@ -26,6 +32,8 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 class ConnectionTest {
 
     @Test

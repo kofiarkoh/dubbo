@@ -15,6 +15,12 @@
  * limitations under the License.
  */
 package org.apache.dubbo.remoting.handler;
+import edu.illinois.CTestJUnit5Extension;
+
+import org.junit.jupiter.api.extension.ExtendWith;
+
+import edu.illinois.CTestClass;
+
 
 
 import org.apache.dubbo.common.URL;
@@ -38,6 +44,8 @@ import java.util.concurrent.ExecutorService;
 
 import static org.junit.jupiter.api.Assertions.fail;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class WrappedChannelHandlerTest {
     WrappedChannelHandler handler;
     URL url = URL.valueOf("test://10.20.30.40:1234");

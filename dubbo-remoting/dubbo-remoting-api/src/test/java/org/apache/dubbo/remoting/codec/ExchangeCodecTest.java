@@ -15,6 +15,12 @@
  * limitations under the License.
  */
 package org.apache.dubbo.remoting.codec;
+import edu.illinois.CTestJUnit5Extension;
+
+import org.junit.jupiter.api.extension.ExtendWith;
+
+import edu.illinois.CTestClass;
+
 
 
 import org.apache.dubbo.common.Version;
@@ -61,6 +67,8 @@ import static org.apache.dubbo.common.constants.CommonConstants.READONLY_EVENT;
  *         4-11 id (long)
  *         12 -15 datalength
  */
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class ExchangeCodecTest extends TelnetCodecTest {
     // magic header.
     private static final short MAGIC = (short) 0xdabb;

@@ -15,6 +15,12 @@
  * limitations under the License.
  */
 package org.apache.dubbo.remoting.api;
+import edu.illinois.CTestJUnit5Extension;
+
+import org.junit.jupiter.api.extension.ExtendWith;
+
+import edu.illinois.CTestClass;
+
 
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.epoll.Epoll;
@@ -38,6 +44,8 @@ import static org.apache.dubbo.remoting.Constants.NETTY_EPOLL_ENABLE_KEY;
 /**
  * {@link NettyEventLoopFactory}
  */
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class NettyEventLoopFactoryTest {
 
     @BeforeEach

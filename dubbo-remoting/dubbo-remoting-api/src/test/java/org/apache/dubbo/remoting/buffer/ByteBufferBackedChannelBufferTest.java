@@ -15,9 +15,17 @@
  * limitations under the License.
  */
 package org.apache.dubbo.remoting.buffer;
+import edu.illinois.CTestJUnit5Extension;
+
+import org.junit.jupiter.api.extension.ExtendWith;
+
+import edu.illinois.CTestClass;
+
 
 import java.nio.ByteBuffer;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class ByteBufferBackedChannelBufferTest extends AbstractChannelBufferTest {
 
     private ChannelBuffer buffer;

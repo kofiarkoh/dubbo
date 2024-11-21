@@ -15,6 +15,12 @@
  * limitations under the License.
  */
 package org.apache.dubbo.remoting.api;
+import edu.illinois.CTestJUnit5Extension;
+
+import org.junit.jupiter.api.extension.ExtendWith;
+
+import edu.illinois.CTestClass;
+
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.ByteBufAllocator;
@@ -27,6 +33,8 @@ import org.mockito.Mockito;
 /**
  * {@link Http2ProtocolDetector}
  */
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class Http2ProtocolDetectorTest {
 
     @Test

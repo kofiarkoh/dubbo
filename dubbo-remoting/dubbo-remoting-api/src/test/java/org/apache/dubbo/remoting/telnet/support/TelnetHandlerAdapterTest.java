@@ -15,6 +15,12 @@
  * limitations under the License.
  */
 package org.apache.dubbo.remoting.telnet.support;
+import edu.illinois.CTestJUnit5Extension;
+
+import org.junit.jupiter.api.extension.ExtendWith;
+
+import edu.illinois.CTestClass;
+
 
 import org.apache.dubbo.common.URL;
 import org.apache.dubbo.common.utils.StringUtils;
@@ -28,6 +34,8 @@ import org.mockito.Mockito;
 import java.util.HashMap;
 import java.util.Map;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 class TelnetHandlerAdapterTest {
 
     @Test

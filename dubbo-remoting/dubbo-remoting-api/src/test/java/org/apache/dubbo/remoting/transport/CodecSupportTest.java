@@ -15,6 +15,12 @@
  * limitations under the License.
  */
 package org.apache.dubbo.remoting.transport;
+import edu.illinois.CTestJUnit5Extension;
+
+import org.junit.jupiter.api.extension.ExtendWith;
+
+import edu.illinois.CTestClass;
+
 
 import org.apache.dubbo.common.serialize.ObjectOutput;
 import org.apache.dubbo.common.serialize.Serialization;
@@ -27,6 +33,8 @@ import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class CodecSupportTest {
 
     @Test

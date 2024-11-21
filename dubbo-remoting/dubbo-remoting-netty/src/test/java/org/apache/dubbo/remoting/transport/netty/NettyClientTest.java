@@ -15,6 +15,12 @@
  * limitations under the License.
  */
 package org.apache.dubbo.remoting.transport.netty;
+import edu.illinois.CTestJUnit5Extension;
+
+import org.junit.jupiter.api.extension.ExtendWith;
+
+import edu.illinois.CTestClass;
+
 
 import org.apache.dubbo.common.URL;
 import org.apache.dubbo.common.utils.NetUtils;
@@ -34,6 +40,8 @@ import java.util.List;
  * Date: 5/3/11
  * Time: 5:47 PM
  */
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class NettyClientTest {
     static RemotingServer server;
     static int port = NetUtils.getAvailablePort();

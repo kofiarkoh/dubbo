@@ -15,6 +15,12 @@
  * limitations under the License.
  */
 package org.apache.dubbo.remoting;
+import edu.illinois.CTestJUnit5Extension;
+
+import org.junit.jupiter.api.extension.ExtendWith;
+
+import edu.illinois.CTestClass;
+
 
 import org.apache.dubbo.common.logger.Logger;
 import org.apache.dubbo.common.logger.LoggerFactory;
@@ -32,6 +38,8 @@ import static org.apache.dubbo.common.constants.CommonConstants.TIMEOUT_KEY;
  * <p>
  * mvn clean test -Dtest=*PerformanceClientTest -Dserver=10.20.153.187:9911
  */
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class ChanelHandlerTest  {
 
     private static final Logger logger = LoggerFactory.getLogger(ChanelHandlerTest.class);
@@ -91,7 +99,9 @@ public class ChanelHandlerTest  {
         closeClient(exchangeClient);
     }
 
-    static class PeformanceTestHandler extends ExchangeHandlerAdapter {
+    static @ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
+class PeformanceTestHandler extends ExchangeHandlerAdapter {
         String url = "";
 
         /**

@@ -16,6 +16,12 @@
  */
 
 package org.apache.dubbo.remoting.api;
+import edu.illinois.CTestJUnit5Extension;
+
+import org.junit.jupiter.api.extension.ExtendWith;
+
+import edu.illinois.CTestClass;
+
 
 import org.apache.dubbo.common.URL;
 import org.apache.dubbo.common.extension.ExtensionLoader;
@@ -28,6 +34,8 @@ import java.lang.reflect.Field;
 import java.util.Map;
 import java.util.function.Consumer;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class SingleProtocolConnectionManagerTest {
 
     private ConnectionManager connectionManager = ExtensionLoader.getExtensionLoader(ConnectionManager.class).getExtension(SingleProtocolConnectionManager.NAME);

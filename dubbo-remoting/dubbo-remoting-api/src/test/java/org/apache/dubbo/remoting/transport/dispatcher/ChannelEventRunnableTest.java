@@ -15,6 +15,12 @@
  * limitations under the License.
  */
 package org.apache.dubbo.remoting.transport.dispatcher;
+import edu.illinois.CTestJUnit5Extension;
+
+import org.junit.jupiter.api.extension.ExtendWith;
+
+import edu.illinois.CTestClass;
+
 
 import org.apache.dubbo.remoting.Channel;
 import org.apache.dubbo.remoting.ChannelHandler;
@@ -29,6 +35,8 @@ import java.util.Arrays;
 /**
  * {@link ChannelEventRunnable}
  */
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class ChannelEventRunnableTest {
 
     @Test

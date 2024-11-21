@@ -16,6 +16,12 @@
  */
 
 package org.apache.dubbo.remoting.exchange.support;
+import edu.illinois.CTestJUnit5Extension;
+
+import org.junit.jupiter.api.extension.ExtendWith;
+
+import edu.illinois.CTestClass;
+
 
 import org.apache.dubbo.common.URL;
 import org.apache.dubbo.common.extension.ExtensionLoader;
@@ -35,6 +41,8 @@ import java.time.format.DateTimeFormatter;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.atomic.AtomicInteger;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class DefaultFutureTest {
 
     private static final AtomicInteger index = new AtomicInteger();

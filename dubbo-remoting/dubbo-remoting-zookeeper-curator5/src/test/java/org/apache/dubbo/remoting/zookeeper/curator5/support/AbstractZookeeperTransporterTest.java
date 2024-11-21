@@ -15,6 +15,12 @@
  * limitations under the License.
  */
 package org.apache.dubbo.remoting.zookeeper.curator5.support;
+import edu.illinois.CTestJUnit5Extension;
+
+import org.junit.jupiter.api.extension.ExtendWith;
+
+import edu.illinois.CTestClass;
+
 
 import org.apache.dubbo.common.URL;
 import org.apache.dubbo.remoting.zookeeper.AbstractZookeeperTransporter;
@@ -35,6 +41,8 @@ import static org.hamcrest.core.IsNull.nullValue;
 /**
  * AbstractZookeeperTransporterTest
  */
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class AbstractZookeeperTransporterTest {
     private ZookeeperClient zookeeperClient;
     private AbstractZookeeperTransporter abstractZookeeperTransporter;

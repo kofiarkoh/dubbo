@@ -15,12 +15,20 @@
  * limitations under the License.
  */
 package org.apache.dubbo.remoting.exchange;
+import edu.illinois.CTestJUnit5Extension;
+
+import org.junit.jupiter.api.extension.ExtendWith;
+
+import edu.illinois.CTestClass;
+
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.apache.dubbo.common.constants.CommonConstants.HEARTBEAT_EVENT;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class ResponseTest {
     @Test
     public void test() {

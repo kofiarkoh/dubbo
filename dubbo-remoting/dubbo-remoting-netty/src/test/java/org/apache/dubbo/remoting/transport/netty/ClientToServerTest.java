@@ -15,6 +15,12 @@
  * limitations under the License.
  */
 package org.apache.dubbo.remoting.transport.netty;
+import edu.illinois.CTestJUnit5Extension;
+
+import org.junit.jupiter.api.extension.ExtendWith;
+
+import edu.illinois.CTestClass;
+
 
 import org.apache.dubbo.common.utils.NetUtils;
 import org.apache.dubbo.remoting.RemotingException;
@@ -31,7 +37,9 @@ import java.util.concurrent.CompletableFuture;
 /**
  * ClientToServer
  */
-public abstract class ClientToServerTest  {
+public abstract @ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
+class ClientToServerTest  {
 
     protected static final String LOCALHOST = "127.0.0.1";
 

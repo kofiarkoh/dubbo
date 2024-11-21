@@ -15,6 +15,12 @@
  * limitations under the License.
  */
 package org.apache.dubbo.remoting.telnet.support;
+import edu.illinois.CTestJUnit5Extension;
+
+import org.junit.jupiter.api.extension.ExtendWith;
+
+import edu.illinois.CTestClass;
+
 
 import org.apache.dubbo.remoting.Channel;
 import org.apache.dubbo.remoting.telnet.support.command.ExitTelnetHandler;
@@ -25,6 +31,8 @@ import org.mockito.Mockito;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class ExitTelnetHandlerTest {
     @Test
     public void test() {

@@ -15,6 +15,12 @@
  * limitations under the License.
  */
 package org.apache.dubbo.remoting.exchange.support;
+import edu.illinois.CTestJUnit5Extension;
+
+import org.junit.jupiter.api.extension.ExtendWith;
+
+import edu.illinois.CTestClass;
+
 
 import org.apache.dubbo.remoting.Channel;
 import org.apache.dubbo.remoting.ChannelHandler;
@@ -26,6 +32,8 @@ import org.mockito.Mockito;
 
 import java.lang.reflect.Field;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class ExchangeHandlerDispatcherTest {
 
     @Test

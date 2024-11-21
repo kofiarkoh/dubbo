@@ -15,6 +15,12 @@
  * limitations under the License.
  */
 package org.apache.dubbo.remoting;
+import edu.illinois.CTestJUnit5Extension;
+
+import org.junit.jupiter.api.extension.ExtendWith;
+
+import edu.illinois.CTestClass;
+
 
 import org.apache.dubbo.common.URL;
 
@@ -22,6 +28,8 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class TransportersTest {
     private String url = "dubbo://127.0.0.1:12345?transporter=mockTransporter";
     private ChannelHandler channel = Mockito.mock(ChannelHandler.class);

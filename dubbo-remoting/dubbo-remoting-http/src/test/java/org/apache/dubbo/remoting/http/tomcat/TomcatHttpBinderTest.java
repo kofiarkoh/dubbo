@@ -15,6 +15,12 @@
  * limitations under the License.
  */
 package org.apache.dubbo.remoting.http.tomcat;
+import edu.illinois.CTestJUnit5Extension;
+
+import org.junit.jupiter.api.extension.ExtendWith;
+
+import edu.illinois.CTestClass;
+
 
 import org.apache.dubbo.common.URL;
 import org.apache.dubbo.common.url.component.ServiceConfigURL;
@@ -33,6 +39,8 @@ import java.io.IOException;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class TomcatHttpBinderTest {
     @Test
     public void shouldAbleHandleRequestForTomcatBinder() throws Exception {

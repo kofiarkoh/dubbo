@@ -15,6 +15,12 @@
  * limitations under the License.
  */
 package org.apache.dubbo.remoting.zookeeper.curator;
+import edu.illinois.CTestJUnit5Extension;
+
+import org.junit.jupiter.api.extension.ExtendWith;
+
+import edu.illinois.CTestClass;
+
 
 import org.apache.dubbo.common.URL;
 import org.apache.dubbo.remoting.zookeeper.ChildListener;
@@ -44,6 +50,8 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.mockito.Mockito.mock;
 
 @DisabledForJreRange(min = JRE.JAVA_16)
+@ExtendWith(CTestJUnit5Extension.class)
+@CTestClass
 public class CuratorZookeeperClientTest {
     private CuratorZookeeperClient curatorClient;
     CuratorFramework client = null;
